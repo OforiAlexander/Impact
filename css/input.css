@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+
+#bg_image_head{
+background-image: url('../assets/intro-ace-bg1.png');
+background-position-x: 50%;
+background-position-y: 0;
+overflow: hidden;
+background-size: cover;
+width: 100%;
+}
+
+#bg_image_head::before{
+    content: "";
+    background: rgba(6, 12, 34, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#bg_image_question{
+background-image: url('../assets/about-bg.jpg');
+background-position-x: 50%;
+background-position-y: 0;
+background-attachment: fixed;
+overflow: hidden;
+background-size: cover;
+width: 100%;
+}
+
+#bg_image_question::before{
+    content: "";
+    background: rgba(6, 12, 34, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@tailwind utilities;

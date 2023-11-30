@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACE</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <!-- imported fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased font-raleway bg-light_gray">
+    <div id="home">
+      <header>
+        <nav class="bg-gray-900 fixed top-0 left-0 right-0 z-50 w-full">
+          <div
+            class="flex flex-nowrap items-center justify-between mx-auto py-4 px-6"
+          >
+            <h1 class="text-white font-bold text-3xl">
+              <a
+                href="#intro"
+                class="uppercase text-white font-bold tracking-wider text-4xl"
+              >
+                <span class="text-logo_ace">ACE</span>Impact
+              </a>
+            </h1>
+
+            <div class="w-full block md:w-auto" id="navbar-default">
+              <ul
+                class="font-medium text-sm flex flex-col p-4 md:p-0 mt-4 capitalize border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-900 border-gray-700"
+              >
+                <li id="active_nav">
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-bold after:content-[''] after:w-10 after:bg-blue-700"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <span></span>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >Speakers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >Programme</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >Hotels</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >Partners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >F.A.Q</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center justify-center gap-3 px-2">
+              <button
+                class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+              >
+                English
+              </button>
+              <button
+                class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+              >
+                Français
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="w-full">
+        <!-- Background Images -->
+        <section>
+          <!-- First Background -->
+          <div
+            id="bg_image_head"
+            class="h-screen relative flex items-center justify-center"
+          >
+            <div
+              class="flex w-full h-full absolute items-center justify-center top-0 left-0 right-0 text-white"
+            >
+              <div class="max-w-4xl p-2 space-y-5 text-center overflow-clip">
+                <div class="py-4 px-4">
+                  <h1 class="font-extrabold text-6xl tracking-wider">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </h1>
+                </div>
+                <button
+                  class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-2 px-10 rounded-xxl transition-colors duration-300"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Background -->
+          <div
+            id="bg_image_question"
+            class="relative h-72 flex items-center justify-center"
+          >
+            <div
+              class="flex w-full h-full absolute items-center justify-center top-0 left-0 right-0 text-white"
+            >
+              <div
+                class="max-w-6xl py-4 px-4 flex flex-nowrap justify-center gap-6 items-start space-x-4 text-center overflow-clip"
+              >
+                <div class="text-left tracking-wide py-4 px-2 w-1/2 basis-1/2">
+                  <div class="mb-4">
+                    <h3 class="text-4xl font-bold">Lorem, ipsum .</h3>
+                  </div>
+                  <p class="text-sm font-light leading-6 text-white">
+                    The Regional workshop provides a platform for stakeholders
+                    to discuss best practices and implementation plans for the
+                    financial and operational sustainability of the project; and
+                    provide implementation support to enhance project efficiency
+                    and address technical challenges hindering successful
+                    project execution.
+                  </p>
+                </div>
+                <div class="text-left tracking-wide py-4 px-2 basis-1/4">
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold">Lorem, ipsum .</h3>
+                  </div>
+                  <p class="text-sm font-light leading-7 text-white">
+                    Lorem, ipsum dolor.
+                  </p>
+                </div>
+                <div class="text-left tracking-wide py-4 px-2 basis-1/4">
+                  <div class="mb-4">
+                    <h3 class="text-xl font-bold">Lorem, ipsum .</h3>
+                  </div>
+                  <p class="text-sm font-light leading-7 text-white">
+                    Lorem ipsum dolor sit.
+                    <span class="block">Lorem ipsum dolor sit.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white w-full py-2 px-2">
+          <div class="container py-4 px-4 w-full" id="timer">
+            <div class="px-2 mx-auto">
+              <div class="mx-auto max-w-4xl py-2 px-2">
+                <div class="flex items-center justify-center flex-col space-y-2">
+                  <div class="py-2 my-3 text-txt_color">
+                    <h3 class="font-bold text-4xl text-txt_color uppercase">
+                      Event Will Start In
+                    </h3>
+                  </div>
+                  <div class="px-2">
+                    <p class="grid grid-cols-4 gap-4">
+                      <span
+                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
+                        ><span
+                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
+                          >00</span
+                        ><span class="font-medium text-lg text-gray-400"
+                          >Days</span
+                        ></span
+                      >
+                      <span
+                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
+                        ><span
+                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
+                          >00</span
+                        ><span class="font-medium text-lg text-gray-400"
+                          >Hours</span
+                        ></span
+                      >
+                      <span
+                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
+                        ><span
+                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
+                          >00</span
+                        ><span class="font-medium text-lg text-gray-400"
+                          >Minutes</span
+                        ></span
+                      >
+                      <span
+                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
+                        ><span
+                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
+                          >00</span
+                        ><span class="font-medium text-lg text-gray-400"
+                          >Seconds</span
+                        ></span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Speakers Section -->
+          <div class="container py-4 px-4 mt-2 w-full" id="speakers">
+            <div class="px-2 py-6 my-2 mx-auto">
+              <div class="mx-auto max-w-6xl py-2 px-2">
+                <div
+                  class="flex items-center justify-center flex-col py-2 space-y-4"
+                >
+                  <div class="py-2 my-3 text-txt_color">
+                    <h3 class="font-bold text-4xl text-txt_color uppercase my-2">
+                      Event Speakers
+                    </h3>
+                    <p
+                      class="font-medium text-base_two text-gray-400 text-center"
+                    >
+                      Here are some of our speakers
+                    </p>
+                  </div>
+                  <!-- Carousel Begins -->
+                  <div class="px-2 py-2 w-full" id="carousel">
+                    <div>
+                      <div class="grid grid-cols-3 gap-4">
+                        <div class="relative group/carousel">
+                          <div class="transition-all duration-150 group/img">
+                            <img
+                              class="h-auto max-w-full rounded-lg"
+                              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
+                          >
+                            <div class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center">
+                              <h3 class="text-xl font-bold text-center overflow-hidden">Lorem ipsum dolor.</h3>
+                              <div class="block my-1">
+                                <p class="font-light text-gray-100 text-sm"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative group/carousel">
+                          <div class="transition-all duration-150 group/img">
+                            <img
+                              class="h-auto max-w-full rounded-lg"
+                              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
+                          >
+                          <div class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center">
+                              <h3 class="text-xl font-bold text-center overflow-hidden">Lorem ipsum dolor.</h3>
+                              <div class="block my-1">
+                                <p class="font-light text-gray-100 text-sm"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="relative group/carousel">
+                          <div class="transition-all duration-150 group/img">
+                            <img
+                              class="h-auto max-w-full rounded-lg"
+                              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
+                          >
+                          <div class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center">
+                              <h3 class="text-xl font-bold text-center overflow-hidden">Lorem ipsum dolor.</h3>
+                              <div class="block my-1">
+                                <p class="font-light text-gray-100 text-sm"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Carousel Ends -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Event Date -->
+        <section class="py-4 mt-7 mb-3 px-4 w-full" id="events">
+          <div class="px-2 py-2 my-2 mx-auto">
+            <div class="mx-auto max-w-4xl py-2 px-2">
+              <div class="flex items-center justify-center flex-col space-y-2">
+                <div class="py-2 my-3 text-txt_color">
+                  <h3 class="font-bold text-4xl text-txt_color uppercase">
+                    Event Schedule
+                  </h3>
+                  <p
+                      class="font-medium text-base_two text-gray-400 text-center"
+                    >
+                      Here are some of our speakers
+                    </p>
+                </div>
+                <div class="px-2 py-4">
+             
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
