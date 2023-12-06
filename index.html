@@ -12,34 +12,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- flowbite tailwindcss component used for the humburger menu -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
   </head>
+
   <body class="antialiased font-raleway bg-light_gray">
     <div id="home">
       <header>
         <nav class="bg-gray-900 fixed top-0 left-0 right-0 z-50 w-full">
           <div
-            class="flex flex-nowrap items-center justify-between mx-auto py-4 px-6"
+            class="flex max-w-screen-xl flex-wrap items-center justify-between mx-auto py-4 px-6"
           >
             <h1 class="text-white font-bold text-3xl">
               <a
-                href="#intro"
+                href="#home"
                 class="uppercase text-white font-bold tracking-wider text-4xl"
               >
                 <span class="text-logo_ace">ACE</span>Impact
               </a>
             </h1>
-
-            <div class="w-full block md:w-auto" id="navbar-default">
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div class="w-full hidden xl:block md:w-auto" id="navbar-default">
               <ul
                 class="font-medium text-sm flex flex-col p-4 md:p-0 mt-4 capitalize border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-900 border-gray-700"
               >
-                <li id="active_nav">
+                <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-bold after:content-[''] after:w-10 after:bg-blue-700"
+                    href="#home"
+                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-bold"
                     aria-current="page"
                     >Home</a
                   >
@@ -47,66 +77,83 @@
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#speakers"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >Speakers</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#programme"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >Programme</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#register"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >Register</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#hotels"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >Hotels</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#partners"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >Partners</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#faq"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >F.A.Q</a
                   >
                 </li>
                 <li>
                   <a
-                    href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-200 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
+                    href="#contact"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
                     >Contact</a
                   >
                 </li>
+
+                <li class="xl:hidden block">
+                  <div class="flex items-center justify-center gap-3 px-2">
+                    <button
+                      class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                    >
+                      English
+                    </button>
+                    <button
+                      class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                    >
+                      Français
+                    </button>
+                  </div>
+                </li>
               </ul>
             </div>
-            <div class="flex items-center justify-center gap-3 px-2">
-              <button
-                class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
-              >
-                English
-              </button>
-              <button
-                class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
-              >
-                Français
-              </button>
+            <div class="hidden xl:block">
+              <div class="flex items-center justify-center gap-3 px-2">
+                <button
+                  class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                >
+                  English
+                </button>
+                <button
+                  class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                >
+                  Français
+                </button>
+              </div>
             </div>
           </div>
         </nav>
@@ -118,16 +165,27 @@
           <!-- First Background -->
           <div
             id="bg_image_head"
-            class="h-screen relative flex items-center justify-center"
+            class="relative h-screen mt-16 py-16 px-6 flex items-center justify-center"
           >
             <div
-              class="flex w-full h-full absolute items-center justify-center top-0 left-0 right-0 text-white"
+              class="flex w-full h-full z-20 py-12 items-center justify-end text-white"
             >
-              <div class="max-w-4xl p-2 space-y-5 text-center overflow-clip">
-                <div class="py-4 px-4">
-                  <h1 class="font-extrabold text-6xl tracking-wider">
-                    Lorem ipsum dolor sit amet consectetur.
+              <div
+                class="max-w-5xl mx-auto p-2 space-y-5 text-right overflow-clip"
+              >
+                <div
+                  class="py-4 px-4 max-w-4xl flex flex-col items-end justify-center space-y-2"
+                >
+                  <h1 class="font-extrabold text-8xl tracking-wider">
+                    Lorem ipsum dolor
                   </h1>
+                  <div
+                    class="bg-black bg-opacity-50 flex px-4 py-2 w-1/2 text-left justify-end items-end my-1"
+                  >
+                    <span class="text-gray-50 font-semibold text-lg"
+                      >Lorem ipsum dolor sit amet.</span
+                    >
+                  </div>
                 </div>
                 <button
                   class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-2 px-10 rounded-xxl transition-colors duration-300"
@@ -139,114 +197,153 @@
           </div>
 
           <!-- Second Background -->
-          <div
-            id="bg_image_question"
-            class="relative h-72 flex items-center justify-center"
-          >
+          <div class="md:px-4 py-4 flex">
             <div
-              class="flex w-full h-full absolute items-center justify-center top-0 left-0 right-0 text-white"
+              class="relative h-full py-6 px-4 z-20 bg-[#151853] bg-opacity-80 overflow-auto"
             >
-              <div
-                class="max-w-6xl py-4 px-4 flex flex-nowrap justify-center gap-6 items-start space-x-4 text-center overflow-clip"
-              >
-                <div class="text-left tracking-wide py-4 px-2 w-1/2 basis-1/2">
-                  <div class="mb-4">
-                    <h3 class="text-4xl font-bold">Lorem, ipsum .</h3>
+              <div class="font-bold text-white">
+                <div class="w-full z-30 h-full">
+                  <div id="bg_image_question" class="w-full">
+                    <div class="py-4 px-2 bg-black bg-opacity-50">
+                      <div
+                        class="flex flex-col items-start my-2 justify-center py-4 px-2 text-white"
+                      >
+                        <div class="py-2 px-2">
+                          <div class="md:pl-6 py-2 space-y-4">
+                            <div class="w-full">
+                              <div>
+                                <h1
+                                  class="text-white font-bold text-4xl md:ml-2"
+                                >
+                                  About The Event
+                                </h1>
+                                <div
+                                  class="bg-black bg-opacity-50 flex px-4 py-2 text-left justify-start items-center my-1"
+                                >
+                                  <span
+                                    class="text-cyan-500 font-bold text-xs uppercase"
+                                    >Lorem ipsum dolor sit amet.</span
+                                  >
+                                </div>
+                              </div>
+                              <div
+                                class="my-2 py-4 px-2 text-gray-100 font-normal tracking-widest leading-5 text-sm flex"
+                              >
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit. Repellendus harum tempora ea
+                                  labore, ducimus exercitationem consectetur
+                                  praesentium aperiam in soluta rem
+                                  necessitatibus nihil blanditiis delectus
+                                  quaerat iure expedita quod ullam aliquid ad
+                                  distinctio assumenda incidunt! Corporis
+                                  veritatis blanditiis ut tempora quasi deleniti
+                                  aut ullam distinctio aliquam, laudantium
+                                  accusantium hic repudiandae necessitatibus,
+                                  minus voluptatibus, et est magnam enim? Hic
+                                  esse expedita possimus libero distinctio a
+                                  maiores, provident fuga neque, reprehenderit
+                                  quam natus numquam rerum laborum accusamus
+                                  sapiente tempore ratione obcaecati labore?
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p class="text-sm font-light leading-6 text-white">
-                    The Regional workshop provides a platform for stakeholders
-                    to discuss best practices and implementation plans for the
-                    financial and operational sustainability of the project; and
-                    provide implementation support to enhance project efficiency
-                    and address technical challenges hindering successful
-                    project execution.
-                  </p>
-                </div>
-                <div class="text-left tracking-wide py-4 px-2 basis-1/4">
-                  <div class="mb-4">
-                    <h3 class="text-xl font-bold">Lorem, ipsum .</h3>
+                  <div class="py-4 px-0 md:px-4 w-full" id="timer">
+                    <div class="px-2 pt-8 mx-auto">
+                      <div
+                        class="lg:flex items-center justify-between flex-nowrap py-2 px-2"
+                      >
+                        <div
+                          id="conference"
+                          class="pt-4 pb-2 md:pl-8 basis-1/2 my-2 space-y-6 text-center md:text-right"
+                        >
+                          <h1
+                            class="text-logo_ace border-b mb-2 font-bold text-3xl md:text-5xl uppercase"
+                          >
+                            Our Event Starts In
+                          </h1>
+                          <span class="text-sm"
+                            >Count Every Second Until The Event</span
+                          >
+                        </div>
+                        <div
+                          class="flex flex-wrap md:items-center justify-center text-white basis-1/2"
+                        >
+                          <div class="py-4 flex items-center justify-center">
+                            <div
+                              class="text-6xl font-bold text-center pt-8 shadow-md px-4 font-poppins border-2 border-[#FFFFFF26] mx-4 leading-4"
+                            >
+                              00
+                              <span
+                                class="mt-6 text-lg font-medium block text-[#5d5e8d]"
+                              >
+                                Days
+                              </span>
+                            </div>
+                          </div>
+                          <div class="py-4 flex items-center justify-center">
+                            <div
+                              class="text-6xl font-bold text-center pt-8 shadow-md px-4 font-poppins border-2 border-[#FFFFFF26] mx-4 leading-4"
+                            >
+                              00
+                              <span
+                                class="mt-6 text-lg font-medium block text-[#5d5e8d]"
+                              >
+                                Hours
+                              </span>
+                            </div>
+                          </div>
+                          <div class="py-4 flex items-center justify-center">
+                            <div
+                              class="text-6xl font-bold text-center pt-8 shadow-md px-4 font-poppins border-2 border-[#FFFFFF26] mx-4 leading-4"
+                            >
+                              00
+                              <span
+                                class="mt-6 text-lg font-medium block text-[#5d5e8d]"
+                              >
+                                Minutes
+                              </span>
+                            </div>
+                          </div>
+                          <div class="py-4 flex items-center justify-center">
+                            <div
+                              class="text-6xl font-bold text-center pt-8 shadow-md px-4 font-poppins border-2 border-[#FFFFFF26] mx-4 leading-4"
+                            >
+                              00
+                              <span
+                                class="mt-6 text-lg font-medium block text-[#5d5e8d]"
+                              >
+                                Seconds
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p class="text-sm font-light leading-7 text-white">
-                    Lorem, ipsum dolor.
-                  </p>
-                </div>
-                <div class="text-left tracking-wide py-4 px-2 basis-1/4">
-                  <div class="mb-4">
-                    <h3 class="text-xl font-bold">Lorem, ipsum .</h3>
-                  </div>
-                  <p class="text-sm font-light leading-7 text-white">
-                    Lorem ipsum dolor sit.
-                    <span class="block">Lorem ipsum dolor sit.</span>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="bg-white w-full py-2 px-2">
-          <div class="container py-4 px-4 w-full" id="timer">
-            <div class="px-2 mx-auto">
-              <div class="mx-auto max-w-4xl py-2 px-2">
-                <div class="flex items-center justify-center flex-col space-y-2">
-                  <div class="py-2 my-3 text-txt_color">
-                    <h3 class="font-bold text-4xl text-txt_color uppercase">
-                      Event Will Start In
-                    </h3>
-                  </div>
-                  <div class="px-2">
-                    <p class="grid grid-cols-4 gap-4">
-                      <span
-                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
-                        ><span
-                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
-                          >00</span
-                        ><span class="font-medium text-lg text-gray-400"
-                          >Days</span
-                        ></span
-                      >
-                      <span
-                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
-                        ><span
-                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
-                          >00</span
-                        ><span class="font-medium text-lg text-gray-400"
-                          >Hours</span
-                        ></span
-                      >
-                      <span
-                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
-                        ><span
-                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
-                          >00</span
-                        ><span class="font-medium text-lg text-gray-400"
-                          >Minutes</span
-                        ></span
-                      >
-                      <span
-                        class="flex flex-col space-y-2 text-gray-600 font-medium text-base items-center justify-center capitalize"
-                        ><span
-                          class="rounded-md bg-black bg-opacity-90 w-24 text-center text-white font-bold text-5xl py-3 px-4"
-                          >00</span
-                        ><span class="font-medium text-lg text-gray-400"
-                          >Seconds</span
-                        ></span
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Speakers Section -->
-          <div class="container py-4 px-4 mt-2 w-full" id="speakers">
+        <!-- Speakers Section -->
+        <section>
+          <div class="lg:container py-4 px-4 mt-2 w-full" id="speakers">
             <div class="px-2 py-6 my-2 mx-auto">
               <div class="mx-auto max-w-6xl py-2 px-2">
                 <div
                   class="flex items-center justify-center flex-col py-2 space-y-4"
                 >
                   <div class="py-2 my-3 text-txt_color">
-                    <h3 class="font-bold text-4xl text-txt_color uppercase my-2">
+                    <h3
+                      class="font-bold text-4xl text-txt_color uppercase my-2"
+                    >
                       Event Speakers
                     </h3>
                     <p
@@ -256,10 +353,15 @@
                     </p>
                   </div>
                   <!-- Carousel Begins -->
-                  <div class="px-2 py-2 w-full" id="carousel">
+                  <div
+                    class="px-6 py-4 w-full bg-gray-200 rounded-md shadow"
+                    id="carousel"
+                  >
                     <div>
-                      <div class="grid grid-cols-3 gap-4">
-                        <div class="relative group/carousel">
+                      <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+                      >
+                        <div class="relative group/carousel my-4">
                           <div class="transition-all duration-150 group/img">
                             <img
                               class="h-auto max-w-full rounded-lg"
@@ -270,15 +372,25 @@
                           <div
                             class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
                           >
-                            <div class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center">
-                              <h3 class="text-xl font-bold text-center overflow-hidden">Lorem ipsum dolor.</h3>
+                            <div
+                              class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center"
+                            >
+                              <h3
+                                class="text-xl font-bold text-center overflow-hidden"
+                              >
+                                Lorem ipsum dolor.
+                              </h3>
                               <div class="block my-1">
-                                <p class="font-light text-gray-100 text-sm"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+                                <p class="font-light text-gray-100 text-sm">
+                                  <em
+                                    >Lorem ipsum dolor sit amet consectetur.</em
+                                  >
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="relative group/carousel">
+                        <div class="relative group/carousel my-4">
                           <div class="transition-all duration-150 group/img">
                             <img
                               class="h-auto max-w-full rounded-lg"
@@ -289,15 +401,25 @@
                           <div
                             class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
                           >
-                          <div class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center">
-                              <h3 class="text-xl font-bold text-center overflow-hidden">Lorem ipsum dolor.</h3>
+                            <div
+                              class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center"
+                            >
+                              <h3
+                                class="text-xl font-bold text-center overflow-hidden"
+                              >
+                                Lorem ipsum dolor.
+                              </h3>
                               <div class="block my-1">
-                                <p class="font-light text-gray-100 text-sm"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+                                <p class="font-light text-gray-100 text-sm">
+                                  <em
+                                    >Lorem ipsum dolor sit amet consectetur.</em
+                                  >
+                                </p>
                               </div>
                             </div>
+                          </div>
                         </div>
-                        </div>
-                        <div class="relative group/carousel">
+                        <div class="relative group/carousel my-4">
                           <div class="transition-all duration-150 group/img">
                             <img
                               class="h-auto max-w-full rounded-lg"
@@ -308,14 +430,136 @@
                           <div
                             class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
                           >
-                          <div class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center">
-                              <h3 class="text-xl font-bold text-center overflow-hidden">Lorem ipsum dolor.</h3>
+                            <div
+                              class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center"
+                            >
+                              <h3
+                                class="text-xl font-bold text-center overflow-hidden"
+                              >
+                                Lorem ipsum dolor.
+                              </h3>
                               <div class="block my-1">
-                                <p class="font-light text-gray-100 text-sm"><em>Lorem ipsum dolor sit amet consectetur.</em></p>
+                                <p class="font-light text-gray-100 text-sm">
+                                  <em
+                                    >Lorem ipsum dolor sit amet consectetur.</em
+                                  >
+                                </p>
                               </div>
                             </div>
+                          </div>
                         </div>
+                        <div class="relative group/carousel my-4">
+                          <div class="transition-all duration-150 group/img">
+                            <img
+                              class="h-auto max-w-full rounded-lg"
+                              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
+                          >
+                            <div
+                              class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center"
+                            >
+                              <h3
+                                class="text-xl font-bold text-center overflow-hidden"
+                              >
+                                Lorem ipsum dolor.
+                              </h3>
+                              <div class="block my-1">
+                                <p class="font-light text-gray-100 text-sm">
+                                  <em
+                                    >Lorem ipsum dolor sit amet consectetur.</em
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                        <div class="relative group/carousel my-4">
+                          <div class="transition-all duration-150 group/img">
+                            <img
+                              class="h-auto max-w-full rounded-lg"
+                              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
+                          >
+                            <div
+                              class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center"
+                            >
+                              <h3
+                                class="text-xl font-bold text-center overflow-hidden"
+                              >
+                                Lorem ipsum dolor.
+                              </h3>
+                              <div class="block my-1">
+                                <p class="font-light text-gray-100 text-sm">
+                                  <em
+                                    >Lorem ipsum dolor sit amet consectetur.</em
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="relative group/carousel my-4">
+                          <div class="transition-all duration-150 group/img">
+                            <img
+                              class="h-auto max-w-full rounded-lg"
+                              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div
+                            class="bg-gray-800 group-hover/carousel:h-2/5 transition-all duration-300 bg-opacity-70 w-full h-1/4 py-4 px-2 flex flex-col items-center justify-center rounded absolute bottom-0 left-0 right-0 text-white"
+                          >
+                            <div
+                              class="w-full flex items-center flex-col space-y-1 justify-center py-2 px-2 text-center"
+                            >
+                              <h3
+                                class="text-xl font-bold text-center overflow-hidden"
+                              >
+                                Lorem ipsum dolor.
+                              </h3>
+                              <div class="block my-1">
+                                <p class="font-light text-gray-100 text-sm">
+                                  <em
+                                    >Lorem ipsum dolor sit amet consectetur.</em
+                                  >
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="my-4 py-2 px-2 text-center w-full flex flex-col items-center justify-center"
+                      >
+                        <div
+                          class="animate-bounce bg-slate-800 p-2 w-8 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center"
+                        >
+                          <svg
+                            class="w-6 h-6 text-violet-500"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                          </svg>
+                        </div>
+                        <button
+                          class="border-2 inline-flex items-center gap-3 justify-between hover:text-gray-50 border-bdr_blue hover:bg-txt_color hover:border-white text-gray font-semibold py-2 px-10 rounded-xxl transition-colors duration-300"
+                        >
+                          Load More
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -326,23 +570,1065 @@
           </div>
         </section>
 
-        <!-- Event Date -->
-        <section class="py-4 mt-7 mb-3 px-4 w-full" id="events">
+        <!-- Event Schedule -->
+        <section class="py-4 mt-7 mb-3 px-4 w-full" id="programme">
           <div class="px-2 py-2 my-2 mx-auto">
-            <div class="mx-auto max-w-4xl py-2 px-2">
+            <div class="mx-auto w-full md:max-w-4xl py-2 px-2">
               <div class="flex items-center justify-center flex-col space-y-2">
                 <div class="py-2 my-3 text-txt_color">
                   <h3 class="font-bold text-4xl text-txt_color uppercase">
                     Event Schedule
                   </h3>
                   <p
-                      class="font-medium text-base_two text-gray-400 text-center"
-                    >
-                      Here are some of our speakers
-                    </p>
+                    class="font-medium text-base_two text-gray-400 text-center"
+                  >
+                    Here are some of our speakers
+                  </p>
                 </div>
                 <div class="px-2 py-4">
-             
+                  <div class="px-4 py-4 text-white">
+                    <div
+                      class="flex flex-wrap sm:flex-nowrap bg-gray-900 items-center justify-center border-r-2 border-gray-100"
+                    >
+                      <div
+                        class="bg-btn_blue w-full sm:w-auto text-center py-3 px-10 capitalize cursor-pointer text-gray-50 font-bold text-base"
+                      >
+                        Monday
+                      </div>
+                      <div
+                        class="py-3 px-10 capitalize cursor-pointer text-gray-50 font-bold text-base"
+                      >
+                        Tuesday
+                      </div>
+                      <div
+                        class="py-3 px-10 capitalize cursor-pointer text-gray-50 font-bold text-base"
+                      >
+                        Thurday
+                      </div>
+                      <div
+                        class="py-3 px-10 capitalize cursor-pointer text-gray-50 font-bold text-base"
+                      >
+                        Friday
+                      </div>
+                    </div>
+
+                    <div>
+                      <div class="sm:max-w-5xl mx-auto my-4 py-4 px-2">
+                        <div class="text-txt_color text-base space-y-4">
+                          <div class="px-4 m-2 sm:max-w-5xl mx-auto">
+                            <div
+                              class="text-base font-bold py-1 border-b-2 border-gray-500"
+                            >
+                              <span> All times- UTC </span>
+                            </div>
+
+                            <div class="py-4 mt-2 w-full">
+                              <div class="space-y-6">
+                                <div
+                                  class="text-lg hover:bg-white cursor-text delay-100 transition-all ease-in-out py-3 px-2 border-b-2 border-b-gray-200 font-medium flex items-center justify-center w-full gap-6"
+                                >
+                                  <p>08:00</p>
+                                  <div class="w-full">
+                                    <p class="font-normal inline-block">
+                                      <a
+                                        href="#"
+                                        class="font-medium text-logo_ace hover:underline transition"
+                                      >
+                                        Arrival of Participants and Registration
+                                      </a>
+                                    </p>
+
+                                    <button
+                                      class="mx-3 font-medium text-red-700"
+                                    >
+                                      - Join
+                                    </button>
+                                  </div>
+                                </div>
+                                <div
+                                  class="text-lg hover:bg-white cursor-text delay-100 transition-all ease-in-out py-3 px-2 border-b-2 border-b-gray-200 font-medium w-full"
+                                >
+                                  <div class="w-full gap-6 space-y-4">
+                                    <p>08:00</p>
+                                    <div class="w-full">
+                                      <p class="font-normal inline-block">
+                                        <a
+                                          href="#"
+                                          class="font-medium text-logo_ace hover:underline transition"
+                                          >Opening Ceremony</a
+                                        >
+                                      </p>
+                                      <button
+                                        class="mx-3 font-medium text-red-700"
+                                      >
+                                        - Join
+                                      </button>
+                                    </div>
+
+                                    <div>
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Iusto quam
+                                      necessitatibus, obcaecati sunt dolore
+                                      assumenda laboriosam optio quod eaque
+                                      unde?
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="py-6 px-4 mt-6" id="register">
+          <div class="text-txt_color uppercase text-center">
+            <h1 class="text-2xl sm:text-4xl font-bold tracking-wide">
+              Fill Out Our Registration Form
+            </h1>
+          </div>
+          <div class="py-6 mt-2 sm:px-4" id="forms">
+            <form
+              class="sm:px-4 flex items-center justify-between flex-col gap-4 flex-wrap"
+            >
+              <!-- selector starts -->
+              <div
+                class="py-4 flex items-center w-full justify-center gap-6 flex-wrap"
+              >
+                <div
+                  class="gap-4 flex flex-col items-start w-full justify-between flex-wrap flex-1"
+                  id="selector_items"
+                >
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="engagement"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Title</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-4 text-gray-500"
+                            viewBox="0 0 27 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.27071 24.1667C1.71027 24.1667 1.23363 23.9703 0.840778 23.5774C0.447903 23.1846 0.251465 22.7079 0.251465 22.1475V2.85258C0.251465 2.29217 0.447903 1.81552 0.840778 1.42265C1.23363 1.0298 1.71027 0.833374 2.27071 0.833374H24.729C25.2895 0.833374 25.7661 1.0298 26.159 1.42265C26.5519 1.81552 26.7483 2.29217 26.7483 2.85258V22.1475C26.7483 22.7079 26.5519 23.1846 26.159 23.5774C25.7661 23.9703 25.2895 24.1667 24.729 24.1667H2.27071ZM2.27071 23.0449H24.729C24.9534 23.0449 25.1591 22.9514 25.346 22.7645C25.533 22.5775 25.6265 22.3718 25.6265 22.1475V2.85258C25.6265 2.62824 25.533 2.42258 25.346 2.2356C25.1591 2.04864 24.9534 1.95516 24.729 1.95516H2.27071C2.04635 1.95516 1.84068 2.04864 1.65373 2.2356C1.46677 2.42258 1.37329 2.62824 1.37329 2.85258V22.1475C1.37329 22.3718 1.46677 22.5775 1.65373 22.7645C1.84068 22.9514 2.04635 23.0449 2.27071 23.0449ZM4.02071 19.0625H9.85404V17.6042H4.02071V19.0625ZM17.2186 15.8374L23.3997 9.65629L22.3593 8.61581L17.2186 13.7929L15.1405 11.7148L14.1365 12.7552L17.2186 15.8374ZM4.02071 13.2292H9.85404V11.7709H4.02071V13.2292ZM4.02071 7.39587H9.85404V5.93754H4.02071V7.39587Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                        </div>
+                        <select
+                          id="job_type"
+                          name="selector"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        >
+                          <option
+                            value=""
+                            selected=""
+                            class="block mb-2 text-sm font-medium text-gray-500 pl-6 ml-3"
+                          >
+                            Select Job Type
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="surname"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Surname</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                      <div
+                      class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                    >
+                      <svg
+                        class="w-6 h-4 text-gray-500"
+                        viewBox="0 0 26 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.33347 23.4487L0.884766 17L7.33347 10.5513L8.25014 11.4872L2.73731 17L8.25014 22.5129L7.33347 23.4487ZM3.00014 25.5962H4.28218V28.7949H21.7181V25.5962H23.0001V31.359C23.0001 31.9995 22.7757 32.5442 22.3267 32.9932C21.8777 33.4422 21.3329 33.6667 20.6925 33.6667H5.30781C4.66734 33.6667 4.1226 33.4422 3.6736 32.9932C3.22463 32.5442 3.00014 31.9995 3.00014 31.359V25.5962ZM4.28218 8.16029H3.00014V2.64104C3.00014 2.00057 3.22463 1.45583 3.6736 1.00683C4.1226 0.55786 4.66734 0.333374 5.30781 0.333374H20.6925C21.3329 0.333374 21.8777 0.55786 22.3267 1.00683C22.7757 1.45583 23.0001 2.00057 23.0001 2.64104V8.16029H21.7181V5.20517H4.28218V8.16029ZM4.28218 30.077V31.359C4.28218 31.6154 4.38902 31.8505 4.60268 32.0642C4.81638 32.2778 5.05142 32.3847 5.30781 32.3847H20.6925C20.9489 32.3847 21.1839 32.2778 21.3976 32.0642C21.6113 31.8505 21.7181 31.6154 21.7181 31.359V30.077H4.28218ZM4.28218 3.92312H21.7181V2.64104C21.7181 2.38465 21.6113 2.14961 21.3976 1.93592C21.1839 1.72225 20.9489 1.61542 20.6925 1.61542H5.30781C5.05142 1.61542 4.81638 1.72225 4.60268 1.93592C4.38902 2.14961 4.28218 2.38465 4.28218 2.64104V3.92312ZM18.6668 23.4487L17.7501 22.5129L23.263 17L17.7501 11.4872L18.6668 10.5513L25.1155 17L18.6668 23.4487Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </div>
+                        <input
+                          name="selector" placeholder="Enter Surname"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="other_names"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Other Names</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                      <div
+                      class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                    >
+                      <svg
+                        class="w-6 h-4 text-gray-500"
+                        viewBox="0 0 26 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.33347 23.4487L0.884766 17L7.33347 10.5513L8.25014 11.4872L2.73731 17L8.25014 22.5129L7.33347 23.4487ZM3.00014 25.5962H4.28218V28.7949H21.7181V25.5962H23.0001V31.359C23.0001 31.9995 22.7757 32.5442 22.3267 32.9932C21.8777 33.4422 21.3329 33.6667 20.6925 33.6667H5.30781C4.66734 33.6667 4.1226 33.4422 3.6736 32.9932C3.22463 32.5442 3.00014 31.9995 3.00014 31.359V25.5962ZM4.28218 8.16029H3.00014V2.64104C3.00014 2.00057 3.22463 1.45583 3.6736 1.00683C4.1226 0.55786 4.66734 0.333374 5.30781 0.333374H20.6925C21.3329 0.333374 21.8777 0.55786 22.3267 1.00683C22.7757 1.45583 23.0001 2.00057 23.0001 2.64104V8.16029H21.7181V5.20517H4.28218V8.16029ZM4.28218 30.077V31.359C4.28218 31.6154 4.38902 31.8505 4.60268 32.0642C4.81638 32.2778 5.05142 32.3847 5.30781 32.3847H20.6925C20.9489 32.3847 21.1839 32.2778 21.3976 32.0642C21.6113 31.8505 21.7181 31.6154 21.7181 31.359V30.077H4.28218ZM4.28218 3.92312H21.7181V2.64104C21.7181 2.38465 21.6113 2.14961 21.3976 1.93592C21.1839 1.72225 20.9489 1.61542 20.6925 1.61542H5.30781C5.05142 1.61542 4.81638 1.72225 4.60268 1.93592C4.38902 2.14961 4.28218 2.38465 4.28218 2.64104V3.92312ZM18.6668 23.4487L17.7501 22.5129L23.263 17L17.7501 11.4872L18.6668 10.5513L25.1155 17L18.6668 23.4487Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </div>
+                        <input
+                          name="other_names" placeholder="Enter Other Names"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="engagement"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Gender</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-4 text-gray-500"
+                            viewBox="0 0 27 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M2.27071 24.1667C1.71027 24.1667 1.23363 23.9703 0.840778 23.5774C0.447903 23.1846 0.251465 22.7079 0.251465 22.1475V2.85258C0.251465 2.29217 0.447903 1.81552 0.840778 1.42265C1.23363 1.0298 1.71027 0.833374 2.27071 0.833374H24.729C25.2895 0.833374 25.7661 1.0298 26.159 1.42265C26.5519 1.81552 26.7483 2.29217 26.7483 2.85258V22.1475C26.7483 22.7079 26.5519 23.1846 26.159 23.5774C25.7661 23.9703 25.2895 24.1667 24.729 24.1667H2.27071ZM2.27071 23.0449H24.729C24.9534 23.0449 25.1591 22.9514 25.346 22.7645C25.533 22.5775 25.6265 22.3718 25.6265 22.1475V2.85258C25.6265 2.62824 25.533 2.42258 25.346 2.2356C25.1591 2.04864 24.9534 1.95516 24.729 1.95516H2.27071C2.04635 1.95516 1.84068 2.04864 1.65373 2.2356C1.46677 2.42258 1.37329 2.62824 1.37329 2.85258V22.1475C1.37329 22.3718 1.46677 22.5775 1.65373 22.7645C1.84068 22.9514 2.04635 23.0449 2.27071 23.0449ZM4.02071 19.0625H9.85404V17.6042H4.02071V19.0625ZM17.2186 15.8374L23.3997 9.65629L22.3593 8.61581L17.2186 13.7929L15.1405 11.7148L14.1365 12.7552L17.2186 15.8374ZM4.02071 13.2292H9.85404V11.7709H4.02071V13.2292ZM4.02071 7.39587H9.85404V5.93754H4.02071V7.39587Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                        </div>
+                        <select
+                          name="selector"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        >
+                          <option
+                            value="Male"
+                            selecte
+                            class="block mb-2 text-sm font-medium text-gray-500 pl-6 ml-3"
+                          >
+                            Male
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="email"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Email</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                      <div
+                      class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                    >
+                      <svg
+                        class="w-6 h-6 text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 20 18"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 5h5M5 8h2m6-3h2m-5 3h6m2-7H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3v5l5-5h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1Z"
+                        />
+                      </svg>
+                    </div>
+                    <input type="email"
+                    name="email" placeholder="Enter Email"
+                    class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                  />
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="country"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Country</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-6 text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 21"
+                          >
+                            <g
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <path d="M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                              <path
+                                d="M13.8 12.938h-.01a7 7 0 1 0-11.465.144h-.016l.141.17c.1.128.2.252.3.372L8 20l5.13-6.248c.193-.209.373-.429.54-.66l.13-.154Z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <select
+                          name="selector"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        >
+                          <option
+                            value="Ghana"
+                            selecte
+                            class="block mb-2 text-sm font-medium text-gray-500 pl-6 ml-3"
+                          >
+                            Ghana
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="role"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Role in ACE-Impact</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-6 text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 17 21"
+                          >
+                            <g
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                            >
+                              <path d="M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                              <path
+                                d="M13.8 12.938h-.01a7 7 0 1 0-11.465.144h-.016l.141.17c.1.128.2.252.3.372L8 20l5.13-6.248c.193-.209.373-.429.54-.66l.13-.154Z"
+                              />
+                            </g>
+                          </svg>
+                        </div>
+                        <select
+                          name="role"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        >
+                          <option
+                            value="Ghana"
+                            selector
+                            class="block mb-2 text-sm font-medium text-gray-500 pl-6 ml-3"
+                          >
+                            Role
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-wrap justify-between items-center px-4 gap-7"
+                  >
+                    <div class="py-2 px-2">
+                      <label
+                        for="role"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Organisation</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-4 text-gray-500"
+                            viewBox="0 0 26 34"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.33347 23.4487L0.884766 17L7.33347 10.5513L8.25014 11.4872L2.73731 17L8.25014 22.5129L7.33347 23.4487ZM3.00014 25.5962H4.28218V28.7949H21.7181V25.5962H23.0001V31.359C23.0001 31.9995 22.7757 32.5442 22.3267 32.9932C21.8777 33.4422 21.3329 33.6667 20.6925 33.6667H5.30781C4.66734 33.6667 4.1226 33.4422 3.6736 32.9932C3.22463 32.5442 3.00014 31.9995 3.00014 31.359V25.5962ZM4.28218 8.16029H3.00014V2.64104C3.00014 2.00057 3.22463 1.45583 3.6736 1.00683C4.1226 0.55786 4.66734 0.333374 5.30781 0.333374H20.6925C21.3329 0.333374 21.8777 0.55786 22.3267 1.00683C22.7757 1.45583 23.0001 2.00057 23.0001 2.64104V8.16029H21.7181V5.20517H4.28218V8.16029ZM4.28218 30.077V31.359C4.28218 31.6154 4.38902 31.8505 4.60268 32.0642C4.81638 32.2778 5.05142 32.3847 5.30781 32.3847H20.6925C20.9489 32.3847 21.1839 32.2778 21.3976 32.0642C21.6113 31.8505 21.7181 31.6154 21.7181 31.359V30.077H4.28218ZM4.28218 3.92312H21.7181V2.64104C21.7181 2.38465 21.6113 2.14961 21.3976 1.93592C21.1839 1.72225 20.9489 1.61542 20.6925 1.61542H5.30781C5.05142 1.61542 4.81638 1.72225 4.60268 1.93592C4.38902 2.14961 4.28218 2.38465 4.28218 2.64104V3.92312ZM18.6668 23.4487L17.7501 22.5129L23.263 17L17.7501 11.4872L18.6668 10.5513L25.1155 17L18.6668 23.4487Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          type="text"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-[298px] sm:w-[500px] pl-10 p-2.5"
+                          placeholder="Enter name of organisation"
+                        />
+                      </div>
+                    </div>
+                    <div class="py-2 px-2">
+                      <label
+                        for="role"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Position</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-4 text-gray-500"
+                            viewBox="0 0 26 34"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M7.33347 23.4487L0.884766 17L7.33347 10.5513L8.25014 11.4872L2.73731 17L8.25014 22.5129L7.33347 23.4487ZM3.00014 25.5962H4.28218V28.7949H21.7181V25.5962H23.0001V31.359C23.0001 31.9995 22.7757 32.5442 22.3267 32.9932C21.8777 33.4422 21.3329 33.6667 20.6925 33.6667H5.30781C4.66734 33.6667 4.1226 33.4422 3.6736 32.9932C3.22463 32.5442 3.00014 31.9995 3.00014 31.359V25.5962ZM4.28218 8.16029H3.00014V2.64104C3.00014 2.00057 3.22463 1.45583 3.6736 1.00683C4.1226 0.55786 4.66734 0.333374 5.30781 0.333374H20.6925C21.3329 0.333374 21.8777 0.55786 22.3267 1.00683C22.7757 1.45583 23.0001 2.00057 23.0001 2.64104V8.16029H21.7181V5.20517H4.28218V8.16029ZM4.28218 30.077V31.359C4.28218 31.6154 4.38902 31.8505 4.60268 32.0642C4.81638 32.2778 5.05142 32.3847 5.30781 32.3847H20.6925C20.9489 32.3847 21.1839 32.2778 21.3976 32.0642C21.6113 31.8505 21.7181 31.6154 21.7181 31.359V30.077H4.28218ZM4.28218 3.92312H21.7181V2.64104C21.7181 2.38465 21.6113 2.14961 21.3976 1.93592C21.1839 1.72225 20.9489 1.61542 20.6925 1.61542H5.30781C5.05142 1.61542 4.81638 1.72225 4.60268 1.93592C4.38902 2.14961 4.28218 2.38465 4.28218 2.64104V3.92312ZM18.6668 23.4487L17.7501 22.5129L23.263 17L17.7501 11.4872L18.6668 10.5513L25.1155 17L18.6668 23.4487Z"
+                              fill="black"
+                            ></path>
+                          </svg>
+                        </div>
+                        <input
+                          type="text"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-[298px] sm:w-[500px] pl-10 p-2.5"
+                          placeholder="Enter Position"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="w-full">
+                    <div class="py-2 px-2">
+                      <label
+                        for="role"
+                        class="block mb-2 text-lg font-semibold font-sans text-gray-800 pl-6 ml-3"
+                        >Mode of participation</label
+                      >
+                      <div
+                        class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white w-full py-1"
+                      >
+                        <div
+                          class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                        >
+                          <svg
+                            class="w-6 h-6 text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 20 16"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M3.656 12.115a3 3 0 0 1 5.682-.015M13 5h3m-3 3h3m-3 3h3M2 1h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Zm6.5 4.5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
+                            />
+                          </svg>
+                        </div>
+                        <select
+                          name="participation"
+                          class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-11/12 pl-10 p-2.5"
+                        >
+                          <option
+                            value="Ghana"
+                            selector
+                            class="block mb-2 text-sm font-medium text-gray-500 pl-6 ml-3"
+                          >
+                            Mode of participation
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Hotels -->
+        <section class="py-4 px-2 my-2 w-full bg-white" id="hotels">
+          <div class="text-white mt-8 py-6 px-3">
+            <div class="text-txt_color uppercase text-center">
+              <h1 class="text-5xl font-bold tracking-wide">Hotels</h1>
+            </div>
+            <div
+              class="md:flex items-center justify center max-w-5xl mx-auto py-4 space-x-4"
+            >
+              <div id="text" class="basis-1/3">
+                <div class="py-4 px-4">
+                  <a
+                    href="#"
+                    class="block w-full py-12 px-8 border rounded-lg shadow bg-gray-800 border-gray-700 hover:bg-gray-700"
+                  >
+                    <h5
+                      class="mb-2 text-2xl font-bold tracking-tight text-white"
+                    >
+                      Noteworthy technology acquisitions 2021
+                    </h5>
+                    <p class="font-normal text-gray-400">
+                      Here are the biggest enterprise technology acquisitions of
+                      2021 so far, in reverse chronological order.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div id="slideer" class="basis-2/3 md:my-0 my-4">
+                <div id="controls-carousel" class="relative w-full h-full">
+                  <!-- Carousel -->
+                  <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="duration-700 ease-in-out">
+                      <img
+                        src="./assets/bg_aau.jpg"
+                        class="absolute block w-full h-full object-cover object-top"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- Item 2 -->
+
+                    <!-- Item 3 -->
+
+                    <!-- Item 4 -->
+
+                    <!-- Item 5 -->
+                  </div>
+                  <!-- Slider controls -->
+                  <button
+                    type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  >
+                    <span
+                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                      <svg
+                        class="w-4 h-4 text-white"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 6 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 1 1 5l4 4"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  >
+                    <span
+                      class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+                    >
+                      <svg
+                        class="w-4 h-4 text-white
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 6 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 9 4-4-4-4"
+                        ></path>
+                      </svg>
+                      <span class="sr-only">Next</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Partners -->
+        <section
+          class="py-4 mt-7 mb-3 px-4 bg-indigo-900 bg-opacity-70"
+          id="partners"
+        >
+          <div class="py-6 sm:py-8 lg:py-12 z-20">
+            <div class="mx-auto container px-4 md:px-8">
+              <div class="flex items-center justify-center flex-col space-y-2">
+                <div class="py-2 my-3 text-white space-y-2">
+                  <h3 class="font-bold text-4xl text-white uppercase">
+                    Our Event Partners
+                  </h3>
+                  <p
+                    class="font-medium text-base_two text-gray-400 text-center"
+                  >
+                    Surf Through Our Event Partiners
+                  </p>
+                </div>
+                <div class="px-2 py-4"></div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+                <div
+                  class="hover:scale-100 scale-95 transition-all duration-500 ease-in-out cursor-pointer"
+                >
+                  <img
+                    class="h-auto max-w-full rounded-lg"
+                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
+                    alt="Our Partners"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mt-7 pt-8" id="faq">
+          <div class="mt-6 mb-3 px-4 py-4 bg-gray-300">
+            <div class="px-2 pb-6 pt-3 my-2 mx-auto">
+              <div class="mx-auto max-w-4xl pb-6 px-2">
+                <div
+                  class="flex items-center justify-center flex-col space-y-2"
+                >
+                  <div class="py-2 my-3 text-txt_color">
+                    <h3 class="font-bold text-4xl text-txt_color uppercase">
+                      Frequently Asked Question
+                    </h3>
+                    <p
+                      class="font-medium text-base_two text-gray-400 text-center"
+                    >
+                      Peaked With Multiple Questions?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordien -->
+              <div class="px-3 max-w-4xl mx-auto mb-3">
+                <div>
+                  <div>
+                    <h2 class="my-3 group">
+                      <button
+                        type="button"
+                        class="flex items-center justify-between font-bold w-full p-5 rtl:text-right text-gray-800 group-hover:underline border-b border-gray-600 gap-3"
+                      >
+                        <span>Lorem, ipsum dolor.</span>
+                        <svg
+                          class="w-3 h-3 rotate-180 shrink-0"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 10 6"
+                        >
+                          <path
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5 5 1 1 5"
+                          />
+                        </svg>
+                      </button>
+                    </h2>
+                    <div class="block">
+                      <div
+                        class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+                      >
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Aliquid aspernatur voluptatum obcaecati vel est
+                          eum praesentium assumenda placeat quisquam sed! Soluta
+                          quas ullam earum accusantium!
+                        </p>
+                        <p class="text-gray-500 dark:text-gray-400">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Voluptatibus omnis praesentium error eum
+                          quibusdam nemo excepturi, modi veritatis, sit quis
+                          molestiae velit vel odit reiciendis cumque est optio
+                          culpa aliquam ratione nisi esse! Earum, soluta.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- aau -->
+        <section
+          id="bg_aau"
+          class="mt-12 mb-6 w-full h-36 bg-black bg-opacity-60"
+        >
+          <div class="py-2 bg-black bg-opacity-60 w-full z-10 h-full"></div>
+        </section>
+
+        <!-- contact form -->
+        <section class="mt-3 w-full py-6 pt-8 px-4" id="contact">
+          <div class="sm:pt-8 sm:px-4">
+            <div
+              class="max-w-7xl lg:p-4 px-4 sm:px-0 sm:mx-auto flex items-start justify-center flex-col sm:flex-row shrink overflow-hidden lg:gap-12"
+            >
+              <div class="flex-1 space-y-3">
+                <h1
+                  class="text-navBlue text-4xl sm:text-6xl font-bold tracking-wide text-center"
+                >
+                  Contact
+                </h1>
+
+                <p class="font-medium text-base_two text-txt_color text-center">
+                  Got additional questions? Send us an email
+                </p>
+
+                <div class="sm:p-3 mt-6 sm:mt-0 mb-12">
+                  <div
+                    class="px-4 py-1 mt-2 space-y-4 text-base text-gray-800 flex flex-col text-right overflow-hidden"
+                  >
+                    <div class="flex items-start justify-start gap-4 sm:pl-12">
+                      <div>
+                        <svg
+                          width="28"
+                          height="40"
+                          viewBox="0 0 31 41"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.0939 0C6.77151 0 0 6.77151 0 15.0947C0 17.2657 0.444357 19.3385 1.32006 21.2561C5.09395 29.5143 12.3295 38.2332 14.4578 40.7084C14.6172 40.8934 14.8497 41 15.0943 41C15.3389 41 15.5714 40.8934 15.7308 40.7084C17.8582 38.2336 25.0938 29.5151 28.8689 21.2561C29.7451 19.3385 30.189 17.2657 30.189 15.0947C30.1882 6.77151 23.4166 0 15.0939 0ZM15.0939 22.9349C10.7707 22.9349 7.25321 19.4174 7.25321 15.0943C7.25321 10.7707 10.7707 7.25321 15.0939 7.25321C19.417 7.25321 22.9345 10.7707 22.9345 15.0943C22.9349 19.4174 19.4174 22.9349 15.0939 22.9349Z"
+                            fill="#182955"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="text-xl text-left">
+                        Trinity Avenue, Accra - Ghana
+                      </p>
+                    </div>
+
+                    <div class="flex items-start justify-start gap-4 sm:pl-12">
+                      <div>
+                        <svg
+                          width="38"
+                          height="37"
+                          viewBox="0 0 38 37"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M15.3392 21.6633C11.804 18.1281 11.0057 14.5928 10.8257 13.1764C10.7753 12.7848 10.9101 12.3921 11.1903 12.1138L14.0512 9.25421C14.472 8.83363 14.5467 8.17817 14.2313 7.6737L9.67619 0.600658C9.32721 0.0420489 8.61066 -0.159559 8.0216 0.135125L0.709089 3.57905C0.232737 3.81361 -0.0474463 4.31972 0.00663816 4.84793C0.389793 8.4879 1.97669 17.4359 10.7701 26.2299C19.5635 35.0239 28.5102 36.6102 32.1521 36.9934C32.6803 37.0474 33.1864 36.7673 33.4209 36.2909L36.8649 28.9784C37.1585 28.3906 36.9582 27.676 36.4019 27.3264L29.3289 22.7726C28.8247 22.4568 28.1692 22.5309 27.7483 22.9514L24.8887 25.8123C24.6105 26.0924 24.2177 26.2272 23.8261 26.1769C22.4097 25.9968 18.8745 25.1986 15.3392 21.6633Z"
+                            fill="#182955"
+                          ></path>
+                          <path
+                            d="M29.3774 19.7967C28.672 19.7967 28.1002 19.2248 28.1002 18.5195C28.0942 13.2317 23.8091 8.94658 18.5213 8.9406C17.816 8.9406 17.2441 8.36878 17.2441 7.66341C17.2441 6.95804 17.816 6.38623 18.5213 6.38623C25.2193 6.39362 30.6472 11.8215 30.6546 18.5195C30.6546 19.2248 30.0828 19.7967 29.3774 19.7967Z"
+                            fill="#182955"
+                          ></path>
+                          <path
+                            d="M35.7633 19.7963C35.0579 19.7963 34.4861 19.2245 34.4861 18.5192C34.4763 9.70613 27.3344 2.56422 18.5213 2.55437C17.816 2.55437 17.2441 1.98255 17.2441 1.27718C17.2441 0.571815 17.816 0 18.5213 0C28.7445 0.0112621 37.0292 8.29598 37.0405 18.5192C37.0405 18.8579 36.9059 19.1827 36.6664 19.4223C36.4269 19.6618 36.102 19.7963 35.7633 19.7963Z"
+                            fill="#182955"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="text-xl text-left">+233.264.173.153</p>
+                    </div>
+                    <div class="flex items-start justify-start gap-4 sm:pl-12">
+                      <div>
+                        <svg
+                          width="41"
+                          height="32"
+                          viewBox="0 0 41 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M37.3968 0H3.60388C3.04918 0 2.52988 0.136373 2.06006 0.361152L20.4203 18.7214L24.5354 14.7666C24.5354 14.7666 24.5357 14.7662 24.5358 14.766C24.5359 14.7658 24.5362 14.7657 24.5362 14.7657L38.9412 0.361472C38.4713 0.136533 37.9517 0 37.3968 0Z"
+                            fill="#182955"
+                          ></path>
+                          <path
+                            d="M40.6394 2.06006L27.0835 15.6152L40.6389 29.1706C40.8637 28.7008 41 28.1815 41 27.6268V3.60332C41 3.04894 40.864 2.52972 40.6394 2.06006Z"
+                            fill="#182955"
+                          ></path>
+                          <path
+                            d="M0.361152 2.06006C0.136373 2.52988 0 3.04918 0 3.60388V27.6273C0 28.1817 0.136213 28.7011 0.360832 29.1707L13.9167 15.6156L0.361152 2.06006Z"
+                            fill="#182955"
+                          ></path>
+                          <path
+                            d="M25.3849 17.3141L21.2692 21.2694C21.0345 21.5041 20.7272 21.6214 20.4199 21.6214C20.1127 21.6214 19.8053 21.5041 19.5707 21.2694L15.6152 17.314L2.05908 30.8692C2.52898 31.0941 3.04861 31.2307 3.60347 31.2307H37.3964C37.9511 31.2307 38.4704 31.0943 38.9402 30.8695L25.3849 17.3141Z"
+                            fill="#182955"
+                          ></path>
+                        </svg>
+                      </div>
+                      <p class="text-xl text-left">info@aau.org</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1">
+                <div class="p-3">
+                  <div
+                    class="px-4 py-1 mt-2 space-y-4 text-base text-gray-800 flex flex-col items-center justify-center"
+                  >
+                    <form>
+                      <div class="py-2 px-2 flex-1 mb-3">
+                        <div
+                          class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white"
+                        >
+                          <div
+                            class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                          >
+                            <svg
+                              class="w-6 h-4 text-gray-500"
+                              viewBox="0 0 27 25"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.5 11.3354C11.9531 11.3354 10.665 10.8207 9.63553 9.79125C8.60606 8.76178 8.09133 7.46761 8.09133 5.90874C8.09133 4.34983 8.60606 3.06166 9.63553 2.04422C10.665 1.02678 11.9531 0.518066 13.5 0.518066C15.0469 0.518066 16.335 1.02678 17.3645 2.04422C18.394 3.06166 18.9087 4.34983 18.9087 5.90874C18.9087 7.46761 18.394 8.76178 17.3645 9.79125C16.335 10.8207 15.0469 11.3354 13.5 11.3354ZM0.375 24.9039V22.1924C0.375 21.3655 0.611782 20.6263 1.08534 19.9748C1.55888 19.3234 2.18027 18.815 2.94952 18.4496C4.80289 17.6323 6.6 17.0133 8.34084 16.5926C10.0817 16.1719 11.801 15.9616 13.4989 15.9616C15.1968 15.9616 16.9147 16.1737 18.6526 16.598C20.3906 17.0223 22.1797 17.645 24.0199 18.466C24.8151 18.8253 25.4481 19.3295 25.9189 19.9785C26.3896 20.6275 26.625 21.3655 26.625 22.1924V24.9039H0.375ZM1.8173 23.4616H25.1827V22.1924C25.1827 21.7164 25.0222 21.2579 24.7013 20.8168C24.3804 20.3757 23.9411 20.0097 23.3834 19.7188C21.6959 18.8943 20.0458 18.3023 18.4332 17.943C16.8205 17.5836 15.1761 17.4039 13.5 17.4039C11.8239 17.4039 10.1699 17.5836 8.538 17.943C6.90609 18.3023 5.26202 18.8943 3.60577 19.7188C3.04808 20.0097 2.61058 20.3757 2.29327 20.8168C1.97595 21.2579 1.8173 21.7164 1.8173 22.1924V23.4616ZM13.5 9.89311C14.6226 9.89311 15.5643 9.51269 16.3251 8.75185C17.0859 7.99103 17.4663 7.04933 17.4663 5.92674C17.4663 4.80414 17.0859 3.86244 16.3251 3.10163C15.5643 2.34082 14.6226 1.96041 13.5 1.96041C12.3774 1.96041 11.4357 2.34082 10.6749 3.10163C9.91408 3.86244 9.53367 4.80414 9.53367 5.92674C9.53367 7.04933 9.91408 7.99103 10.6749 8.75185C11.4357 9.51269 12.3774 9.89311 13.5 9.89311Z"
+                                fill="black"
+                              ></path>
+                            </svg>
+                          </div>
+                          <input
+                            type="text"
+                            id="full_name"
+                            name="full_name"
+                            class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block pl-10 w-[298px] sm:w-[500px] p-2.5"
+                            placeholder="Enter Your Full Name"
+                          />
+                        </div>
+                      </div>
+                      <div class="py-2 px-2 flex-1 mb-3">
+                        <div
+                          class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white"
+                        >
+                          <div
+                            class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                          >
+                            <svg
+                              class="w-6 h-4 text-gray-500"
+                              viewBox="0 0 27 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M25.6153 0H1.38464C0.623055 0 0 0.623055 0 1.38459V16.6154C0 17.3768 0.623055 18 1.38464 18H25.6154C26.3768 18 27 17.3769 27 16.6154V1.38459C26.9999 0.623055 26.3769 0 25.6153 0ZM25.0957 1.03839L14.2965 9.13848C14.1023 9.28624 13.8043 9.37868 13.4999 9.37731C13.1956 9.37868 12.8976 9.28624 12.7034 9.13848L1.90418 1.03839H25.0957ZM19.3271 9.67294L25.2117 16.9422C25.2176 16.9495 25.2249 16.955 25.2311 16.9616H1.76881C1.77504 16.9547 1.78231 16.9495 1.78822 16.9422L7.67284 9.67294C7.85314 9.45003 7.81896 9.12324 7.59563 8.94252C7.37273 8.76222 7.04593 8.79639 6.86558 9.01935L1.03844 16.2176V1.68744L12.0807 9.96915C12.4958 10.2783 13.0007 10.4143 13.4999 10.4157C13.9983 10.4146 14.5037 10.2786 14.9191 9.96915L25.9613 1.68744V16.2175L20.1343 9.01935C19.954 8.79645 19.6269 8.76217 19.4043 8.94252C19.181 9.12282 19.1467 9.45003 19.3271 9.67294Z"
+                                fill="#3C3C3B"
+                              ></path>
+                            </svg>
+                          </div>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block pl-10 w-[298px] sm:w-[500px] p-2.5"
+                            placeholder="Enter Your Email Address"
+                          />
+                        </div>
+                      </div>
+                      <div class="py-2 px-2 flex-1 mb-3">
+                        <div
+                          class="relative inline-flex items-center gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white"
+                        >
+                          <div
+                            class="inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none"
+                          >
+                            <svg
+                              width="18"
+                              height="18"
+                              viewBox="0 0 18 18"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.2911 1.70889L16.2918 1.70956C17.3311 2.72925 17.9 4.10182 17.9 5.57381C17.9 7.02546 17.3313 8.39852 16.2911 9.43872C15.2509 10.4789 13.8778 11.0476 12.4262 11.0476C11.6809 11.0476 10.9352 10.8907 10.248 10.5962L10.1858 10.5695L10.1379 10.6174L7.24116 13.5142C7.1917 13.5637 7.11074 13.5815 7.03515 13.5674L6.31977 13.3687L6.1493 13.3213L6.19666 13.4918L6.39643 14.211L6.39585 14.2112L6.39994 14.2214C6.4208 14.2735 6.40284 14.3525 6.34216 14.4132L5.92263 14.8327C5.87317 14.8822 5.79221 14.9001 5.71662 14.8859L5.00124 14.6872L4.83077 14.6399L4.87812 14.8103L5.0779 15.5295L5.07732 15.5297L5.0814 15.5399C5.10227 15.5921 5.0843 15.6711 5.02363 15.7317L4.6041 16.1513C4.55463 16.2007 4.47367 16.2186 4.39807 16.2045L3.6827 16.0058L3.51223 15.9584L3.55959 16.1289L3.75936 16.8481L3.75878 16.8482L3.76287 16.8584C3.78373 16.9106 3.76577 16.9896 3.70509 17.0503L2.92596 17.8294C2.88006 17.8753 2.8243 17.9 2.77691 17.9H0.319645C0.277171 17.9 0.26042 17.8985 0.244499 17.8906L0.238143 17.8874L0.2314 17.8852C0.205503 17.8765 0.162461 17.8416 0.129399 17.7755C0.125033 17.7667 0.122281 17.7572 0.116992 17.736L0.116401 17.7336C0.11296 17.7198 0.10816 17.7006 0.1 17.6795V15.2431C0.1 15.1957 0.124701 15.1399 0.170599 15.094L7.40256 7.86205L7.45104 7.81358L7.42331 7.75089C6.52112 5.71117 6.97214 3.29803 8.56128 1.70889L8.56195 1.70821C9.58164 0.668914 10.9542 0.1 12.4262 0.1C13.8778 0.1 15.2509 0.668688 16.2911 1.70889ZM2.63707 17.4807H2.67849L2.70778 17.4514L3.26716 16.892L3.3076 16.8516L3.29325 16.7962L3.01377 15.7183C3.01374 15.7181 3.01371 15.718 3.01368 15.7179C2.99651 15.6489 3.00311 15.6035 3.01994 15.5782L2.86603 15.452L1.00809 17.31L0.83738 17.4807H1.0788H2.63707ZM4.35004 15.7394L4.40541 15.7538L4.44585 15.7133L4.58569 15.5735L4.62614 15.533L4.61178 15.4777L4.33231 14.3997C4.33227 14.3996 4.33224 14.3994 4.3322 14.3993C4.31505 14.3304 4.32165 14.2849 4.33848 14.2597L4.18456 14.1335L3.00587 15.3122L3.10821 15.4778C3.16435 15.4591 3.22096 15.4473 3.27171 15.4599C3.27183 15.4599 3.27196 15.4599 3.27208 15.4599L4.35004 15.7394ZM5.68689 14.4204L5.74749 14.4373L5.78891 14.3899L5.92875 14.2301L5.96356 14.1903L5.9503 14.1392L5.67082 13.0612C5.67078 13.0611 5.67075 13.0609 5.67071 13.0608C5.65356 12.9919 5.66016 12.9464 5.67699 12.9212L5.52307 12.795L4.34438 13.9737L4.44672 14.1393C4.50259 14.1206 4.55893 14.1089 4.60949 14.1212L5.68689 14.4204ZM10.2838 10.0584L10.2849 10.0589C10.9574 10.385 11.7314 10.5684 12.4861 10.5684C13.8306 10.5684 15.0948 10.0588 16.053 9.10068C17.0104 8.14327 17.5406 6.87934 17.5406 5.53385C17.5406 4.18836 17.0104 2.92443 16.053 1.96703C15.0955 1.00962 13.8316 0.479356 12.4861 0.479356C11.1406 0.479356 9.8767 1.00962 8.9193 1.96703C7.3909 3.49542 7.00351 5.79877 7.94107 7.73503L7.94107 7.73504L7.94163 7.73618C7.98248 7.81787 7.96963 7.91115 7.90043 7.98034L0.568579 15.3122L0.53929 15.3415V15.3829V16.9412V17.1829L0.710064 17.0118L11.7778 5.92414L11.8383 5.86354L11.7877 5.79445C11.2164 5.01374 11.2744 3.9103 11.9775 3.20723C12.3588 2.82592 12.853 2.6172 13.3851 2.6172C13.9173 2.6172 14.4115 2.82592 14.7928 3.20723C15.5728 3.98726 15.5728 5.24248 14.7928 6.02252C14.4115 6.40383 13.9173 6.61254 13.3851 6.61254C12.9469 6.61254 12.5478 6.47947 12.2051 6.23192L12.136 6.18205L12.0758 6.24227L5.66292 12.6551L5.76525 12.8207C5.82141 12.802 5.87803 12.7902 5.92878 12.8028C5.9289 12.8028 5.92901 12.8029 5.92913 12.8029L7.00709 13.0824L7.06267 13.0968L7.10314 13.056L10.0396 10.0996C10.0397 10.0995 10.0397 10.0995 10.0397 10.0995C10.1089 10.0304 10.2021 10.0175 10.2838 10.0584ZM14.4947 3.52529L14.4947 3.52525L14.492 3.52273C14.1958 3.24769 13.8125 3.07647 13.3851 3.07647C12.9608 3.07647 12.5752 3.22563 12.2756 3.52529C11.6572 4.1437 11.6572 5.126 12.2756 5.74441C12.5752 6.04408 12.9608 6.19323 13.3851 6.19323C13.8094 6.19323 14.195 6.04408 14.4947 5.74441C15.1131 5.126 15.1131 4.1437 14.4947 3.52529Z"
+                                fill="#3C3C3B"
+                                stroke="black"
+                                stroke-width="0.2"
+                              ></path>
+                            </svg>
+                          </div>
+                          <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            class="bg-white border-none text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-[298px] sm:w-[500px] pl-10 p-2.5"
+                            placeholder="Enter Your Subject"
+                          />
+                        </div>
+                      </div>
+                      <div class="py-2 px-2 flex-1 mb-3">
+                        <div
+                          class="relative inline-flex items-start py-2 gap-2 shadow-[0_4px_10px_-2px_rgba(0,0,0,0.2)] border-l-2 border-l-black rounded-l bg-white"
+                        >
+                          <textarea
+                            placeholder="Enter Your Message"
+                            rows="5"
+                            class="bg-white border-none ml-2 text-gray-900 text-sm focus:ring-blue-500 rounded-r focus:border-blue-500 focus:rounded-sm block w-[298px] sm:w-[500px] pl-10 p-2.5"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -350,5 +1636,200 @@
         </section>
       </div>
     </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="py-8 px-4 md:px-8 my-2">
+        <div class="flex items-start justify-between w-full flex-wrap">
+          <div class="flex-1 max-w-sm">
+            <h3
+              class="font-semibold text-2xl font-poppins tracking-wider my-2 text-gray-900"
+            >
+              The Ace Impact Project Objectives
+            </h3>
+            <div class="mb-4 font-light text-base tracking-wide text-gray-900">
+              The ACE Impact Project Development Objective is to improve the
+              quality, quantity and development impact of postgraduate education
+              in selected universities through regional specialization and
+              collaboration.
+            </div>
+          </div>
+          <div class="w-full max-w-2xl px-4">
+            <div
+              class="md:mb-16 grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 place-items-start"
+            >
+              <div class="w-full">
+                <div
+                  class="py-1 text-xl mb-3 font-semibold text-gray-900 border-b-2 border-bdr_blue"
+                >
+                  <a
+                    href="#"
+                    class="text-logo_ace font-semibold text-base uppercase"
+                    >Our Useful Links</a
+                  >
+                </div>
+                <div class="flex flex-col gap-4">
+                  <div
+                    class="my-2 border-b-2 border-gray-600 py-2 flex flex-nowrap gap-3 items-center px-2"
+                  >
+                    <svg
+                      class="w-2 text-logo_ace"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 8 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                      />
+                    </svg>
+                    <a
+                      href="#"
+                      class="font-light text-xs tracking-wide text-gray-900 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                    >
+                      AAU
+                    </a>
+                  </div>
+                  <div
+                    class="my-2 border-b-2 border-gray-600 py-2 flex flex-nowrap gap-3 items-center px-2"
+                  >
+                    <svg
+                      class="w-2 text-logo_ace"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 8 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                      />
+                    </svg>
+                    <a
+                      href="#"
+                      class="font-light text-xs tracking-wide text-gray-900 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                    >
+                      AAU
+                    </a>
+                  </div>
+                  <div
+                    class="my-2 border-b-2 border-gray-600 py-2 flex flex-nowrap gap-3 items-center px-2"
+                  >
+                    <svg
+                      class="w-2 text-logo_ace"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 8 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                      />
+                    </svg>
+                    <a
+                      href="#"
+                      class="font-light text-xs tracking-wide text-gray-900 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                    >
+                      AAU
+                    </a>
+                  </div>
+                  <div
+                    class="my-2 border-b-2 border-gray-600 py-2 flex flex-nowrap gap-3 items-center px-2"
+                  >
+                    <svg
+                      class="w-2 text-logo_ace"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 8 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
+                      />
+                    </svg>
+                    <a
+                      href="#"
+                      class="font-light text-xs tracking-wide text-gray-900 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                    >
+                      AAU
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- contact footer -->
+              <div class="w-full">
+                <div
+                  class="py-1 text-xl mb-3 font-semibold text-white border-b-2 border-bdr_blue"
+                >
+                  <a
+                    href="#"
+                    class="text-logo_ace font-semibold text-base uppercase"
+                    >Contact</a
+                  >
+                </div>
+                <div class="flex flex-col space-y-1">
+                  <div class="flex flex-nowrap gap-3 items-center px-2">
+                    <span
+                      class="font-medium text-sm font-sans leading-6 tracking-wider text-gray-900"
+                      >Trinity Avenue
+                    </span>
+                  </div>
+                  <div class="flex flex-nowrap gap-3 items-center px-2">
+                    <span
+                      class="font-medium text-sm font-sans leading-6 tracking-wider text-gray-900"
+                      >East - Legon, Accra</span
+                    >
+                  </div>
+                  <div class="flex flex-nowrap gap-3 items-center px-2">
+                    <span
+                      class="font-medium text-sm font-sans leading-6 tracking-wider text-gray-900"
+                      >Ghana
+                    </span>
+                  </div>
+                  <div class="flex flex-nowrap gap-3 items-center px-2">
+                    <span
+                      class="font-medium text-sm font-sans leading-6 tracking-wider text-gray-900"
+                      ><strong>Phone:</strong> +233.264.173.153</span
+                    >
+                  </div>
+                  <div class="flex flex-nowrap gap-3 items-center px-2">
+                    <span
+                      class="font-medium text-sm font-sans leading-6 tracking-wider text-gray-900"
+                      ><strong>Email:</strong> info@aau.org
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-gray-900 py-6 flex items-center justify-center font-semibold text-lg text-gray-500"
+      >
+        <p class="text-base tracking-wider leading-7">
+          Copyright &copy; 2023. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Flowbite script for functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   </body>
 </html>
