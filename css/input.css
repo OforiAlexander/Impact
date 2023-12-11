@@ -43,4 +43,12 @@ width: 100%;
 }
 
 
+.active{
+    background-color: theme(backgroundColor.btn_blue) !important;
+}
+
+.content_hidden{
+    display: none;
+}
+
 @tailwind utilities;

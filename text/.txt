@@ -133,3 +133,142 @@
                             />
                           </svg>
                         </div>
+
+
+
+
+                        for header
+
+                        
+      <!-- <header>
+        <nav class="bg-gray-900 fixed top-0 left-0 right-0 z-50 w-full">
+          <div
+            class="flex max-w-screen-xl flex-wrap items-center justify-between mx-auto py-4 px-6"
+          >
+            <h1 class="text-white font-bold text-3xl">
+              <a
+                href="#home"
+                class="uppercase text-white font-bold tracking-wider text-4xl"
+              >
+                <span class="text-logo_ace">ACE</span>Impact
+              </a>
+            </h1>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5 text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+            <div class="w-full hidden xl:block md:w-auto" id="navbar-default">
+              <ul
+                class="font-medium text-sm flex flex-col p-4 md:p-0 mt-4 capitalize border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-900 border-gray-700">
+                <li>
+                  <a
+                    href="#home"
+                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0 font-bold"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <span></span>
+                </li>
+                <li>
+                  <a
+                    href="#speakers"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >Speakers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#programme"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >Programme</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#register"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#hotels"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >Hotels</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#partners"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >Partners</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#faq"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >F.A.Q</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="block py-2 px-3 rounded hover:bg-gray-100 font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-300 hover:text-nav_link transition-all"
+                    >Contact</a
+                  >
+                </li>
+
+                <li class="xl:hidden block">
+                  <div class="flex items-center justify-center gap-3 px-2">
+                    <button
+                      class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                    >
+                      English
+                    </button>
+                    <button
+                      class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                    >
+                      Français
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="hidden xl:block">
+              <div class="flex items-center justify-center gap-3 px-2">
+                <button
+                  class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                >
+                  English
+                </button>
+                <button
+                  class="border-2 border-bdr_blue hover:bg-btn_blue text-white font-semibold py-3 px-8 rounded-xxl transition-colors duration-300"
+                >
+                  Français
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header> -->

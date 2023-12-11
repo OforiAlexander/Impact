@@ -2,6 +2,16 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    screens: {
+      'xl': '1198px',
+      // => @media (min-width: 1140px) { ... }
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+      'md': '770px',
+      // => @media (min-width: 640px) { ... }
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+    },
     extend: {
       fontFamily:{
         'raleway': ['Raleway', 'sans-serif'],
