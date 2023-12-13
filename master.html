@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style lang="en">
+              *{
+                  margin: 0px;
+                  padding: 0px;
+                  box-sizing: border-box;
+                  scroll-behavior: smooth;
+                  font-family: 'Raleway', sans-serif;
+              }
+
+              body{
+                  width: 100%;
+                  color: #0e1b4d;
+              }
+
+          .mail_head_container{
+              padding: 10px 20px;
+              max-width: 100%;
+          }
+
+          .conteiner_mail{
+              max-width: 900px;
+              height: 100%;
+              margin: auto auto;
+              padding: 10px 15px;
+          }
+
+          .mailer_head{
+              width: 100%;
+              height: 100%;
+              max-width: 75%;
+              margin: auto;
+              background-color: #fffAff;
+              box-shadow: 5px 5px 10px 0 rgba(136, 136, 136, 0.5);
+              position: relative;
+              border-radius: 0.5rem;
+              }
+
+              .head_subject_holder{
+                  width: 100%;
+                  background-image: url('./assets/mail_image_bg.jpg');
+                  background-position: 40% 60%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  height: 450px;
+                  color: #0e1b4d;
+                  font-weight: 600;
+              }
+
+           .first_child_logo{
+            display: flex;
+            flex-direction: row;
+            background-color: #f6f7fd;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            height: 100%;
+            flex-shrink: 0;
+            height: 70px;
+            padding: 8px 12px;
+           }
+
+           .aau_logo{
+            max-width: 200px;
+            width: 100%;
+            height: 100%;
+            padding: 2px 4px;
+           }
+
+           .aau_logo img{
+            width: 100%;
+           }
+
+           .message_subject{
+            flex: 1;
+            text-align: center;
+           }
+
+           .message_subject h1{
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+        .mail_contents_container{
+            padding: 8px 12px;
+            text-emphasis:inherit;
+        }
+
+        .mail_title{
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+        }
+
+        #mail_message{
+          padding: 12px 12px;
+        }
+
+        .title_container{
+          width: 100%;
+          text-align: center;
+          font-size: 1.6rem;
+          font-weight: 600;
+          font-family: "Raleway", sans-serif;
+          padding: 4px;
+        }
+
+        .title_container h1{
+          margin-bottom: 0.7rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+          letter-spacing: -0.02em;
+          color: #1F2937;
+          text-transform: capitalize;
+        }
+
+        #greeting_name{
+          margin: auto;
+          color:#fff9ff;
+          font-family: 'Raleway', sans-serif;
+          text-transform: capitalize;
+          padding: 8px 0;
+        }
+        #greeting_name span{
+          font-weight: 500;
+          font-size: 0.875rem/* 14px */;
+        line-height: 1.25rem/* 20px */;
+        color: #9CA3AF;
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        }
+
+        .mail_text{
+          padding: 7px 0;
+        }
+
+        .mail_text p{
+          margin-bottom: 0.75rem/* 12px */;
+          font-weight: 400;
+          color: #9AAAAF;
+          font-size: 15px;
+          letter-spacing: 0.03em;
+
+        }
+
+        .mail_button{
+          margin: 12px 6px;
+        }
+
+        .mail_button a{
+          display: inline-flex;
+          margin: 6px;
+          align-items: center;
+          padding-left: 1.2rem;
+          padding-right: 1.2rem;
+          padding-top: 0.6rem;
+          padding-bottom: 0.6rem;
+          text-decoration: none;
+          font-size: 0.875rem/* 14px */;
+      line-height: 1.25rem/* 20px */;
+      font-weight: 500;
+      text-align: center;
+      color: #fff9ff;
+      text-transform: capitalize;
+      border-radius: 0.25rem;
+      background-color: #0090ff;
+      transition: all;
+      transition-duration: 150ms;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1)
+        }
+
+        .mail_button a:hover{
+          background-color: #0e1b4d;
+        }
+
+        .extra_msg_container{
+          width: 100%;
+          padding: 5px 14px;
+          margin-top: 22px;
+          font-size: 14px;
+          color: #0e1b4d;
+          border: solid 1px #9CA3AF;
+          border-radius: 0.3rem;
+          background-color: #f6f7fd;
+          box-shadow: 4px 2px 4px 2px rgba(136, 136, 136, 0.5);
+        }
+
+        .extra_msg_container p{
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        #footer{
+          margin-top: 3rem;
+                }
+
+        .footer_logo_content{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center;
+          flex-grow: 1;
+          height: 100%;
+          flex-shrink: 0;
+          padding: 20px 14px;
+          padding-bottom: -6px;
+         }
+        
+         .footer_logo_content span{
+          border-top: solid 1px #9CA3AF;
+          width: 100%;
+         }
+
+         .copyright_container{
+          width: 100%;
+          text-align: center;
+         }
+
+         .copyright_container p{
+          text-transform: capitalize;
+          font-size: 0.8rem;
+          font-weight: 600;
+         }
+
+         .svg_btn{
+          width: 0.875rem/* 14px */;
+          height: 0.875rem/* 14px */;
+          margin-inline-start: 0.5rem/* 8px */;
+         }
+    </style>
+  </head>
+  <body>
+    <div class="mail_head_container">
+      <div class="conteiner_mail">
+        <div class="mailer_head">
+          <!-- head -->
+          <div class="head_subject_holder">
+            <div class="first_child_logo">
+              <div class="aau_logo">
+                <img src="./assets/AAU-Official-Logos_1_3.png" alt="AAU Logo" />
+              </div>
+              <div id="subject" class="message_subject">
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content -->
+          <div class="mail_contents_container">
+            <div id="mail_message">
+              <div class="title_container">
+                <h1>Noteworthy technology acquisitions 2021</h1>
+              </div>
+
+              <div id="greeting_name">
+                <span>Dear Alexander</span>
+              </div>
+              <div id="text" class="mail_text">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Dolor repudiandae culpa quia harum blanditiis esse voluptatum
+                  aspernatur. Neque similique voluptate, fuga distinctio quis
+                  facere debitis expedita a aliquid eligendi consequuntur earum
+                  sint voluptatum in praesentium eaque, autem rem. Corrupti
+                  aliquid perferendis harum deserunt. Ex labore laboriosam
+                  eveniet eius necessitatibus unde!
+                </p>
+              </div>
+              <div class="mail_button" id="mail_btn">
+                <a href="#">
+                  Reset Password
+                  <svg
+                    class="svg_btn"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <div class="extra_msg_container" id="extra_msg">
+                <p class="extra_message">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Obcaecati modi consectetur asperiores.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <footer id="footer">
+            <div class="footer_logo_content">
+              <span><br><div id="copyright" class="copyright_container">
+                <p>	&#169; Copyright 2023 Association of African Universities <br> &#174; All Rights Reserved</p>
+              </div></span>
+              <div class="aau_logo">
+                <img src="./assets/AAU-Official-Logos_1_3.png" alt="AAU Logo" style="position: relative; top:-12px;" />
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
